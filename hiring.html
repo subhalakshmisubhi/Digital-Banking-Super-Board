@@ -47,6 +47,40 @@
             </div>
         </main>
     </div>
-    <script src="hiring.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const uploadBtn = document.getElementById('uploadBtn');
+            const candidateNameInput = document.getElementById('candidateNameInput');
+            const candidateList = document.getElementById('candidateList');
+
+          <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const uploadBtn = document.getElementById('uploadBtn');
+            const candidateNameInput = document.getElementById('candidateNameInput');
+            const candidateList = document.getElementById('candidateList');
+
+            uploadBtn.addEventListener('click', () => {
+                const name = candidateNameInput.value.trim();
+                if (!name) {
+                    alert('Please enter a candidate name to simulate parsing.');
+                    return;
+                }
+
+                const randomScore = Math.floor(Math.random() * (98 - 75 + 1)) + 75;
+
+                const newCandidate = document.createElement('li');
+                newCandidate.className = 'transaction-item';
+                newCandidate.innerHTML = `
+                    <div>
+                        <strong>${name}</strong> — <span class="income">${randomScore}% Match</span>
+                    </div>
+                    <button style="padding: 4px 10px; background: #34c759; border:none; border-radius:4px; color:white;">Shortlisted</button>
+                `;
+
+                candidateList.insertBefore(newCandidate, candidateList.firstChild);
+                candidateNameInput.value = '';
+            });
+        });
+    </script>
 </body>
 </html>
