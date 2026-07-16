@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Talent Hiring Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>TalentAI</h2>
+            <nav>
+                <a href="index.html">Banking Dashboard</a>
+                <a href="hiring.html" class="active">AI Talent Platform</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Recruiter Workspace</h1>
+                <span class="security-tag" style="color: #3b82f6; background: rgba(59,130,246,0.1)">● AI Engine Active</span>
+            </header>
+            <div class="dashboard-grid">
+                <div class="card balance-card" style="background: linear-gradient(135deg, #1e3a8a, #3b82f6);">
+                    <h3>Resume Parser</h3>
+                    <div class="transfer-input-group" style="margin-top: 15px;">
+                        <input type="text" id="candidateNameInput" placeholder="Candidate Name...">
+                        <button id="uploadBtn">Rank</button>
+                    </div>
+                </div>
+                <div class="card ledger-card">
+                    <h3>AI Scoring Criteria</h3>
+                    <ul class="transaction-list">
+                        <li class="transaction-item"><span>Technical Skills</span><span class="income">40%</span></li>
+                        <li class="transaction-item"><span>Experience Relevance</span><span class="income">35%</span></li>
+                    </ul>
+                </div>
+                <div class="card ledger-card" style="grid-column: span 2;">
+                    <h3>Top Ranked Applicants</h3>
+                    <ul class="transaction-list" id="candidateList">
+                        <li class="transaction-item">
+                            <div><strong>Ananya Sharma</strong> — <span class="income">94% Match</span></div>
+                            <button style="padding: 4px 10px; background: #34c759; border:none; border-radius:4px; color:white;">Shortlisted</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="hiring.js"></script>
+</body>
+</html>
