@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Digital Banking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>ApexBank</h2>
+            <nav>
+                <a href="index.html" class="active">Banking Dashboard</a>
+                <a href="hiring.html">AI Talent Platform</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Welcome back, Subhalakshmi</h1>
+                <span class="security-tag">● Secure Session Active</span>
+            </header>
+            <div class="dashboard-grid">
+                <div class="card balance-card">
+                    <h3>Total Available Balance</h3>
+                    <p class="balance-amount">$48,250.80</p>
+                    <span class="account-number">Acc: •••• 5824</span>
+                </div>
+                <div class="card visa-card-wrapper">
+                    <div class="digital-card" id="digitalCard">
+                        <div class="card-chip"></div>
+                        <p class="card-number">4532 •••• •••• 8912</p>
+                        <div class="card-footer"><span>Subhalakshmi</span><span>EXP: 08/29</span></div>
+                    </div>
+                    <div class="card-controls">
+                        <label class="control-label">
+                            <input type="checkbox" id="freezeToggle"> Freeze Card
+                        </label>
+                        <p id="cardStatusText" class="status-active">Active</p>
+                    </div>
+                </div>
+                <div class="card transfer-card">
+                    <h3>Quick Transfer</h3>
+                    <div class="transfer-input-group">
+                        <input type="number" id="transferAmount" placeholder="Amount ($)">
+                        <button id="sendMoneyBtn">Send</button>
+                    </div>
+                </div>
+                <div class="card ledger-card">
+                    <h3>Recent Activity</h3>
+                    <ul class="transaction-list">
+                        <li class="transaction-item"><span>Amazon Marketplace</span><span class="expense">-$84.50</span></li>
+                        <li class="transaction-item"><span>Freelance Paycheck</span><span class="income">+$1,200.00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
